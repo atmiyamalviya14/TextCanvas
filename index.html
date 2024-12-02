@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Canvas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-toolbar">
+      <button id="undo" class="icon-button" title="Undo">&#x21A9;</button>
+      <button id="redo" class="icon-button" title="Redo">&#x21AA;</button>
+    </div>
+    <div id="canvas"></div>
+    <div class="toolbar">
+      <select id="fontSize" class="dropdown">
+        <option value="10">10</option>
+        <option value="12">12</option>
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20" selected>20</option>
+        <option value="24">24</option>
+        <option value="28">28</option>
+        <option value="32">32</option>
+        <option value="36">36</option>
+        <option value="40">40</option>
+      </select>
+      <select id="fontFamily" class="dropdown">
+        <option value="Arial" selected>Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+      <button id="bold" class="icon-button" title="Bold">
+        <b>B</b>
+      </button>
+      <button id="italic" class="icon-button" title="Italic">
+        <i>I</i>
+      </button>
+      <button id="underline" class="icon-button" title="Underline">
+        <u>U</u>
+      </button>
+      <button id="centerText" class="icon-button" title="Center Align">
+        <span>&#x2194;</span>
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
